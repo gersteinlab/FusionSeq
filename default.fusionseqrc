@@ -1,0 +1,45 @@
+# --------------------------------- This section is required ---------------------------------
+# Location of the bowtie indexes of the human genome and the composite model
+BOWTIE_INDEXES="/path/to/bowtie/Indexes" 
+# the subdirectory of BOWTIE_INDEXES where the human genome is indexed by bowtie-build
+BOWTIE_GENOME="hg18_nh"
+# the subdirectory of BOWTIE_INDEXES where the composite model is indexed by bowtie-build
+BOWTIE_COMPOSITE="hg18_knownGeneAnnotationTranscriptCompositeModel"
+
+# Pointer to the program twoBitToFa part of the blat suite
+BLAT_TWO_BIT_TO_FA="/path/to/blat/twoBitToFa" 
+# Location and filename of  the reference genome in 2bit format (to be used by blat)
+BLAT_DATA_DIR="/path/to/blat/Data/Dir"
+BLAT_TWO_BIT_DATA_FILENAME="hg18.2bit"
+
+# Location and name of the transcript composite model sequence and interval files
+TRANSCRIPT_COMPOSITE_MODEL_DIR="/path/to/transcript/Composite/Model"
+TRANSCRIPT_COMPOSITE_MODEL_FA_FILENAME="knownGeneAnnotationTranscriptCompositeModel.fa"
+TRANSCRIPT_COMPOSITE_MODEL_FILENAME="knownGeneAnnotationTranscriptCompositeModel.txt" 
+
+# location of the annotation files
+ANNOTATION_DIR="/path/to/annotationFiles" 
+# conversion of knownGenes to gene symbols, description, etc. 
+KNOWN_GENE_XREF_FILENAME="kgXref.txt" 
+# conversion of knownGenes to TreeFam
+KNOWN_GENE_TREE_FAM_FILENAME="knownToTreefam.txt" 
+
+# Location and filename of the ribosomal library
+RIBOSOMAL_DIR="/path/to/ribosomal/Dir"
+RIBOSOMAL_FILENAME="ribosomal.2bit"
+
+# ----------------------- This section is optional: visualization tools -------------------------
+# URL of the cgi directory on the web server
+WEB_URL_CGI="http://cgiURL" 
+# location of the data directory on the web server, as seen from the web server
+WEB_DATA_DIR="/path/to/data" 
+# URL of the data directory on the web server
+WEB_DATA_LINK="http://dataURL" 
+# Number of nucleotides flanking the region (for UCSC Genome Browser)
+UCSC_GENOME_BROWSER_FLANKING_REGION=500 
+# URL of the public website (non cgi)
+WEB_PUB_DIR="http://publicURL" 
+# Location of the structural data for Circos
+WEB_SDATA_DIR="/path/to/structural/Data/Circos" 
+# Location of Circos installation
+WEB_CIRCOS_DIR="/path/to/circos" 

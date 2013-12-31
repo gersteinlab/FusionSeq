@@ -1,0 +1,6 @@
+------------ May 9, 2011 --------
+This is version 0.7.0 of FusionSeq. Two major changes are here introduced:
+1. Use of an external configuration file (.fusionseqrc) including the parameters of the different programs and filters. This enable the distribution of binaries, instead of a compilation from scratch.
+2. For those who want to compile the programs, now autoconf/automake tools make it simpler.
+
+Please read the instructions at: http://info.gersteinlab.org/FusionSeq for more detail.
